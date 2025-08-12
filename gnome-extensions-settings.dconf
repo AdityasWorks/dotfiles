@@ -1,0 +1,274 @@
+[Logo-menu]
+menu-button-icon-image=42
+menu-button-icon-size=34
+
+[arcmenu]
+arc-menu-icon=35
+distro-icon=4
+menu-background-color='rgba(48,48,49,0.98)'
+menu-border-color='rgb(60,60,60)'
+menu-button-appearance='Icon'
+menu-button-icon='Menu_Icon'
+menu-foreground-color='rgb(223,223,223)'
+menu-item-active-bg-color='rgb(25,98,163)'
+menu-item-active-fg-color='rgb(255,255,255)'
+menu-item-hover-bg-color='rgb(21,83,158)'
+menu-item-hover-fg-color='rgb(255,255,255)'
+menu-separator-color='rgba(255,255,255,0.1)'
+prefs-visible-page=0
+search-entry-border-radius=(true, 25)
+show-activities-button=true
+
+[azclock]
+changed-data=@a{ss} {}
+widget-data=[[{'Name': 'Digital Clock Widget', 'Widget_Type': 'Widget_Box', 'Lock_Widget': 'false', 'Location_X': '630', 'Location_Y': '140', 'Box_BackgroundEnabled': 'false', 'Box_BackgroundColor': 'rgba(0, 0, 0, .2)', 'Box_BorderEnabled': 'false', 'Box_BorderWidth': '0', 'Box_BorderRadius': '20', 'Box_BorderColor': 'black', 'Box_Spacing': '0', 'Box_Padding': '25', 'Box_VerticalLayout': 'true', 'Box_AnchorPoint': '0'}, {'Name': 'Time Label', 'Element_Type': 'Digital_Clock', 'Element_Margin_Top': '0', 'Element_Margin_Left': '0', 'Element_Margin_Bottom': '0', 'Element_Margin_Right': '0', 'Element_Padding_Top': '0', 'Element_Padding_Left': '0', 'Element_Padding_Bottom': '0', 'Element_Padding_Right': '0', 'TimeZoneOverrideEnabled': 'false', 'TimeZoneOverride': 'UTC', 'Text_ShadowEnabled': 'true', 'Text_ShadowColor': 'rgba(0,0,0,0)', 'Text_ShadowX': '2', 'Text_ShadowY': '2', 'Text_ShadowSpread': '0', 'Text_ShadowBlur': '4', 'Text_Color': 'white', 'Text_BackgroundEnabled': 'false', 'Text_BackgroundColor': 'rgba(0, 0, 0, .2)', 'Text_BorderEnabled': 'false', 'Text_BorderWidth': '0', 'Text_BorderRadius': '20', 'Text_BorderColor': 'black', 'Text_CustomFontEnabled': 'false', 'Text_CustomFontFamily': 'Cantarell', 'Text_Size': '100', 'Text_DateFormat': '%H∶%M∶%S', 'Text_AlignmentX': 'Center', 'Text_AlignmentY': 'Center', 'Text_LineAlignment': 'Center'}, {'Name': 'Date Label', 'Element_Type': 'Digital_Clock', 'Element_Margin_Top': '0', 'Element_Margin_Left': '0', 'Element_Margin_Bottom': '0', 'Element_Margin_Right': '0', 'Element_Padding_Top': '0', 'Element_Padding_Left': '0', 'Element_Padding_Bottom': '0', 'Element_Padding_Right': '0', 'TimeZoneOverrideEnabled': 'false', 'TimeZoneOverride': 'UTC', 'Text_ShadowEnabled': 'true', 'Text_ShadowColor': 'rgba(0,0,0,0)', 'Text_ShadowX': '2', 'Text_ShadowY': '2', 'Text_ShadowSpread': '0', 'Text_ShadowBlur': '4', 'Text_Color': 'white', 'Text_BackgroundEnabled': 'false', 'Text_BackgroundColor': 'rgba(0, 0, 0, .2)', 'Text_BorderEnabled': 'false', 'Text_BorderWidth': '0', 'Text_BorderRadius': '20', 'Text_BorderColor': 'black', 'Text_CustomFontEnabled': 'false', 'Text_CustomFontFamily': 'Cantarell', 'Text_Size': '28', 'Text_DateFormat': '%A %b %d', 'Text_AlignmentX': 'Center', 'Text_AlignmentY': 'Center', 'Text_LineAlignment': 'Center'}]]
+
+[blur-my-shell]
+brightness=0.68000000000000005
+color-and-noise=false
+hacks-level=1
+noise-amount=0.059999999999999998
+noise-lightness=0.040000000000000001
+sigma=7
+
+[blur-my-shell/appfolder]
+style-dialogs=0
+
+[blur-my-shell/applications]
+blacklist=['Brave-browser', 'gjs', 'org.gnome.Shell.Extensions']
+blur-on-overview=true
+customize=false
+enable-all=false
+opacity=240
+
+[blur-my-shell/dash-to-dock]
+style-dash-to-dock=0
+
+[blur-my-shell/dash-to-panel]
+blur-original-panel=true
+
+[blur-my-shell/hidetopbar]
+compatibility=false
+
+[blur-my-shell/overview]
+style-components=2
+
+[blur-my-shell/panel]
+brightness=1.0
+customize=true
+override-background=true
+override-background-dynamically=true
+sigma=0
+static-blur=false
+style-panel=2
+unblur-in-overview=false
+
+[blur-my-shell/window-list]
+brightness=0.35999999999999999
+customize=true
+sigma=30
+
+[clipboard-indicator]
+toggle-menu=['<Shift><Control><Super>v']
+
+[dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+click-action='minimize-or-previews'
+custom-theme-shrink=false
+dash-max-icon-size=36
+disable-overview-on-startup=false
+dock-alignment='CENTER'
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.80000000000000004
+intellihide=true
+manualhide=false
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP'
+preview-size-scale=0.080000000000000002
+show-mounts=true
+
+[forge]
+css-last-update=uint32 37
+dnd-center-layout='stacked'
+focus-border-toggle=false
+window-gap-size=uint32 2
+window-gap-size-increment=uint32 0
+
+[hidetopbar]
+enable-active-window=false
+enable-intellihide=true
+mouse-sensitive=true
+mouse-sensitive-fullscreen-window=true
+shortcut-keybind=['KP_Decimal']
+show-in-overview=true
+
+[lennart-k/rounded_corners]
+corner-radius=28
+
+[openbar]
+accent-color=['0', '0.75', '0.75']
+autohg-bar=true
+autohg-menu=true
+autotheme-dark='Dark'
+autotheme-font=false
+autotheme-light='Light'
+balpha=1.0
+bartype='Islands'
+bcolor=['0.6313725490196078', '0.6392156862745098', '0.6823529411764706']
+bg-change=true
+bgalpha=0.0
+bgalpha-wmax=0.0
+bgalpha2=0.0
+bgcolor=['0', '0', '0']
+bgcolor-wmax=['0', '0', '0']
+bgcolor2=['0.28627450980392155', '0.3215686274509804', '0.3607843137254902']
+bguri='file:///home/aadi/Pictures/Wallpapers/yosemite-lowpoly.jpg'
+boxalpha=0.0
+boxcolor=['0.25098039215686274', '0.25098039215686274', '0.3058823529411765']
+bwidth=0.0
+candyalpha=0.0
+color-scheme='prefer-dark'
+count1=259682
+count10=23
+count11=5
+count12=3
+count2=202513
+count3=63920
+count4=16079
+count5=7361
+count6=2925
+count7=1727
+count8=622
+count9=140
+dark-bcolor=['0.6313725490196078', '0.6392156862745098', '0.6823529411764706']
+dark-bgcolor=['0', '0', '0']
+dark-bgcolor-wmax=['0', '0', '0']
+dark-bgcolor2=['0.28627450980392155', '0.3215686274509804', '0.3607843137254902']
+dark-bguri='file:///home/aadi/Pictures/Wallpapers/yosemite-lowpoly.jpg'
+dark-boxcolor=['0.25098039215686274', '0.25098039215686274', '0.3058823529411765']
+dark-iscolor=['0', '0', '0']
+dark-mbcolor=['0.2235294133424759', '0.24313725531101227', '0.29411765933036804']
+dark-mbgcolor=['0.1411764770746231', '0.12156862765550613', '0.1921568661928177']
+dark-mfgcolor=['1', '1', '1']
+dark-mhcolor=['0', '0.699999988079071', '0.8999999761581421']
+dark-mscolor=['0.9254902005195618', '0.3686274588108063', '0.3686274588108063']
+dark-mshcolor=['0', '0', '0']
+dark-palette1=['81', '78', '89']
+dark-palette10=['196', '143', '116']
+dark-palette11=['196', '132', '148']
+dark-palette12=['52', '44', '60']
+dark-palette2=['240', '186', '153']
+dark-palette3=['161', '123', '138']
+dark-palette4=['39', '40', '51']
+dark-palette5=['125', '126', '137']
+dark-palette6=['141', '143', '165']
+dark-palette7=['112', '114', '133']
+dark-palette8=['52', '52', '60']
+dark-palette9=['185', '174', '173']
+dark-shcolor=['0', '0', '0']
+dark-smbgcolor=['0.2862745225429535', '0.32156863808631897', '0.3607843220233917']
+dark-winbcolor=['0.49019607843137253', '0.49411764705882355', '0.5058823529411764']
+default-font='Sans 12'
+fgalpha=1.0
+fgcolor=['1.0', '1.0', '1.0']
+font='Montserrat Medium 10'
+gradient-direction='vertical'
+halpha=0.25
+hcolor=['0', '0.7', '0.9']
+height=36.0
+isalpha=0.80000000000000004
+iscolor=['0', '0', '0']
+light-bcolor=['0.47058823529411764', '0.47058823529411764', '0.47058823529411764']
+light-bgcolor=['0.8470588235294118', '0.8470588235294118', '0.8470588235294118']
+light-bgcolor-wmax=['0.9215686274509803', '0.9215686274509803', '0.9215686274509803']
+light-bgcolor2=['0.7450980392156863', '0.7450980392156863', '0.7450980392156863']
+light-bguri='file:///home/aadi/Pictures/Wallpapers/yosemite-lowpoly.jpg'
+light-boxcolor=['0.8470588235294118', '0.8470588235294118', '0.8470588235294118']
+light-iscolor=['0.8470588235294118', '0.8470588235294118', '0.8470588235294118']
+light-mbcolor=['0.39215686274509803', '0.39215686274509803', '0.39215686274509803']
+light-mbgcolor=['0.9137254901960784', '0.9137254901960784', '0.9137254901960784']
+light-mscolor=['0.44313725490196076', '0.44313725490196076', '0.44313725490196076']
+light-mshcolor=['0', '0', '0']
+light-palette1=['81', '78', '89']
+light-palette10=['196', '143', '116']
+light-palette11=['196', '132', '148']
+light-palette12=['52', '44', '60']
+light-palette2=['240', '186', '153']
+light-palette3=['161', '123', '138']
+light-palette4=['39', '40', '51']
+light-palette5=['125', '126', '137']
+light-palette6=['141', '143', '165']
+light-palette7=['112', '114', '133']
+light-palette8=['52', '52', '60']
+light-palette9=['185', '174', '173']
+light-shcolor=['0', '0', '0']
+light-smbgcolor=['0.7450980392156863', '0.7450980392156863', '0.7450980392156863']
+light-winbcolor=['0.44313725490196076', '0.44313725490196076', '0.44313725490196076']
+margin=8.0999999999999996
+margin-wmax=5.0
+mbalpha=0.54000000000000004
+mbcolor=['0.2235294133424759', '0.24313725531101227', '0.29411765933036804']
+mbgalpha=0.83999999999999997
+mbgcolor=['0.1411764770746231', '0.12156862765550613', '0.1921568661928177']
+mfgalpha=1.0
+mfgcolor=['1', '1', '1']
+mhcolor=['0', '0.699999988079071', '0.8999999761581421']
+msalpha=0.75
+mscolor=['0.9254902005195618', '0.3686274588108063', '0.3686274588108063']
+mshcolor=['0', '0', '0']
+palette1=['81', '78', '89']
+palette10=['196', '143', '116']
+palette11=['196', '132', '148']
+palette12=['52', '44', '60']
+palette2=['240', '186', '153']
+palette3=['161', '123', '138']
+palette4=['39', '40', '51']
+palette5=['125', '126', '137']
+palette6=['141', '143', '165']
+palette7=['112', '114', '133']
+palette8=['52', '52', '60']
+palette9=['185', '174', '173']
+pause-reload=false
+reloadstyle=false
+shalpha=0.029999999999999999
+shcolor=['0', '0', '0']
+smbgcolor=['0.2862745225429535', '0.32156863808631897', '0.3607843220233917']
+trigger-autotheme=false
+trigger-reload=false
+vpad=2.0
+winbcolor=['0.49019607843137253', '0.49411764705882355', '0.5058823529411764']
+wmaxbar=false
+
+[pop-cosmic]
+clock-alignment='CENTER'
+overlay-key-action='APPLICATIONS'
+show-applications-button=false
+show-workspaces-button=false
+
+[pop-shell]
+active-hint=false
+active-hint-border-radius=uint32 0
+gap-inner=uint32 2
+gap-outer=uint32 2
+hint-color-rgba='rgb(236,94,94)'
+tile-by-default=false
+
+[rounded-window-corners]
+border-color=(0.0, 0.0, 0.0, 0.0)
+border-width=0
+custom-rounded-corner-settings=@a{sv} {}
+global-rounded-corner-settings={'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 14>, 'smoothing': <0.20000000000000001>, 'enabled': <true>}
+settings-version=uint32 5
+
+[tilingshell]
+last-version-name-installed='16.4'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]}]'
+overridden-settings='{}'
+selected-layouts=[['Layout 1'], ['Layout 1']]
+show-indicator=true
+
+[user-theme]
+name='Everforest-Dark'

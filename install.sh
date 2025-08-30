@@ -9,7 +9,8 @@ set -e
 
 echo "🚀 Starting Pop!_OS setup..."
 echo "This script will configure your system. You will be prompted for your password for 'sudo' commands."
-sleep 4
+sleep 3
+
 
 
 # --- 1A. ADD PPAS & CUSTOM REPOSITORIES ---
@@ -25,12 +26,16 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.
 
 
 
+
+
+
 # --- 1B. SYSTEM UPDATES AND CORE APT PACKAGES ---
 echo "⚙️  Updating system and installing core packages via APT..."
 sudo apt-get update && sudo apt-get upgrade -y
-APT_PACKAGES="git stow zsh alacritty btop cava cmatrix code conky conky-manager2 curl docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin exa fzf gnome-tweaks htop jq mongodb-org neofetch nginx openjdk-17-jdk openjdk-21-jdk pavucontrol pipx ripgrep spotify-client tree ubuntu-cleaner wget zoxide unzip tar dconf-cli"
+APT_PACKAGES="git stow zsh btop cava cmatrix code conky conky-manager2 curl docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin exa fzf gnome-tweaks htop jq mongodb-org neofetch nginx openjdk-17-jdk openjdk-21-jdk pavucontrol pipx ripgrep tree wget zoxide unzip tar dconf-cli"
 sudo apt install -y $APT_PACKAGES
 echo "✅ APT packages installed."
+
 
 
 
@@ -41,9 +46,12 @@ wget "https://downloads.mongodb.com/compass/mongodb-compass_1.46.7_amd64.deb" -O
 sudo apt install -y ~/Downloads/mongodb-compass.deb
 
 
+
+
 # --- 2B. INSTALL FLATPAK APPS ---
 echo "📦 Installing Flatpak applications..."
 flatpak install flathub -y com.brave.Browser com.discordapp.Discord com.github.IsmaelMartinez.teams_for_linux com.rtosta.zapzap io.httpie.Httpie
+
 
 
 
@@ -69,12 +77,6 @@ export NVM_DIR="$HOME/.nvm"
 # Install latest LTS Node.js version
 nvm install --lts
 echo "✅ NVM and Node.js LTS installed."
-# Install Spicetify and configure it
-curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
-sudo chmod a+wr /usr/share/spotify
-sudo chmod a+wr /usr/share/spotify/Apps -R
-spicetify backup apply
-echo "✅ Spicetify installed and applied."
 
 
 
@@ -122,6 +124,7 @@ echo "✅ Themes installed."
 cd ~
 rm -rf "$TEMP_DIR"
 
+
 # Apply Themes and Wallpaper
 echo "🎨 Applying themes and setting wallpaper..."
 gsettings set org.gnome.desktop.interface gtk-theme 'Nordic-darker-v40'
@@ -139,6 +142,12 @@ else
     echo "⚠️ Wallpaper not found at $WALLPAPER_PATH. Please add it to your dotfiles repo and update the script."
 fi
 
+
+
+
+
+
+
 # --- 6. VS CODE SETUP ---
 echo "💻 Setting up Visual Studio Code..."
 VSCODE_EXTENSIONS="be5invis.vscode-custom-css beigeowl.wrapped-owl brandonkirbyson.vscode-animations dbaeumer.vscode-eslint eamodio.gitlens esbenp.prettier-vscode github.copilot github.copilot-chat miguelsolorio.fluent-icons ms-azuretools.vscode-containers ms-azuretools.vscode-docker ms-python.debugpy ms-python.python ms-python.vscode-pylance ms-python.vscode-python-envs ms-vscode-remote.remote-containers postman.postman-for-vscode redhat.java tal7aouy.icons teabyii.ayu tomrijndorp.find-it-faster visualstudioexptteam.intellicode-api-usage-examples visualstudioexptteam.vscodeintellicode vscjava.vscode-gradle vscjava.vscode-java-debug vscjava.vscode-java-dependency vscjava.vscode-java-pack vscjava.vscode-java-test vscjava.vscode-maven vscjava.vscode-spring-initializr vscode-icons-team.vscode-icons william-voyek.vscode-nginx"
@@ -147,6 +156,11 @@ for extension in $VSCODE_EXTENSIONS; do
     code --install-extension "$extension" --force
 done
 echo "✅ VS Code extensions installed."
+
+
+
+
+
 
 # --- 7. GNOME EXTENSION MANAGEMENT ---
 echo "🧩 Installing and enabling GNOME extensions..."
@@ -164,6 +178,12 @@ for extension in $GNOME_EXTENSIONS; do
 done
 echo "✅ GNOME extensions installed and enabled."
 
+
+
+
+
+
+
 # --- 8. RESTORE DOTFILES AND SETTINGS ---
 echo "🔗 Restoring all configurations..."
 # Restore extension settings from backup file
@@ -172,10 +192,17 @@ if [ -f "$DCONF_FILE" ]; then
     dconf load /org/gnome/shell/extensions/ < "$DCONF_FILE"
     echo "✅ GNOME extension settings restored."
 fi
+
+
+
+
+
 # Restore all other application settings via stow
 cd "$HOME/dotfiles"
 stow */
 echo "✅ Dotfiles configuration restored."
+
+
 
 # --- 9. FINAL STEPS ---
 echo "✅ Setup complete! Changing default shell to Zsh..."

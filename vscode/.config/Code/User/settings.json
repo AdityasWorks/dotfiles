@@ -1,5 +1,4 @@
 {
-    "github.copilot.nextEditSuggestions.enabled": true,
     "python.defaultInterpreterPath": "/bin/python3",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Ayu Mirage",
@@ -19,5 +18,9 @@
         "file:///home/aadi/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
     "files.autoSave": "afterDelay",
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "github.copilot.nextEditSuggestions.fixes": false,
+    "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "never",
+    "svelte.enable-ts-plugin": true
 }
